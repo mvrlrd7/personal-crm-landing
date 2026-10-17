@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><style>body{margin:0;background:#e9e8e4}a{color:inherit;text-decoration:none}a:hover{opacity:.85}</style></helmet>
+<div style="max-width:1280px;margin:0 auto;background:#fff;color:#000;font-family:'Golos Text',sans-serif">
+
+<section data-screen-label="01 Hero" ref="{{ heroRef }}" style="padding:0 48px 72px">
+  <div style="display:flex;justify-content:space-between;align-items:center;height:76px;border-bottom:2px solid #000;font:600 15px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.08em">
+    <span style="display:flex;align-items:center;gap:12px;white-space:nowrap"><span style="width:14px;height:14px;background:#d8281c"></span>Личная CRM</span><a href="#" style="font-weight:500">Войти</a>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px 64px;align-items:flex-end;margin-top:48px">
+    <div style="flex:7 1 480px;min-width:0">
+      <div style="display:grid;grid-template-columns:64px 1fr;align-items:center;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>01</span><span>Адресная книга с памятью</span></div>
+      <h1 style="margin:20px 0 0;font:700 76px/0.98 'Golos Text',sans-serif;letter-spacing:-0.035em;text-wrap:pretty">Вы знаете больше людей, чем способны удержать в&nbsp;голове.</h1>
+      <p style="margin:28px 0 0;padding-left:64px;max-width:520px;font:400 19px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Адресная книга, которая помнит, о чём вы говорили. Кто это, откуда знакомы и о чём договорились — в одной карточке.</p>
+      <div style="margin:40px 0 0 64px;max-width:440px">
+        <a href="#" style="display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;background:#f5c518;border:3px solid #000;color:#000;font:600 16px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.08em" style-hover="background:#000;color:#f5c518;opacity:1"><span>Создать первую карточку</span><span style="font-size:22px">→</span></a>
+        <div style="margin-top:14px;display:flex;justify-content:space-between;font:500 12px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.1em"><span>Бесплатно, без карты</span><span>Телефон + ПК</span></div>
+      </div>
+    </div>
+    <div style="flex:5 1 360px;min-width:0;display:grid;grid-template-columns:1fr 96px;gap:3px;background:#000;border:3px solid #000">
+      <div style="background:#fff;padding:28px 28px 32px">
+        <div style="font:500 12px/1 'Golos Text',sans-serif;letter-spacing:.16em;text-transform:uppercase">Карточка · 03.2026</div>
+        <div style="font:500 36px/1 'Golos Text',sans-serif;letter-spacing:-0.02em;margin-top:24px">Андрей Соколов</div>
+        <div style="font-size:13px;margin-top:12px;text-transform:uppercase;letter-spacing:.06em">Product Camp · дизайн‑директор</div>
+        <div style="border-top:1px solid #000;margin-top:28px;padding-top:20px;font-size:18px;line-height:1.45">Обещал познакомить с командой из Казани. Напомнить в апреле.</div>
+      </div>
+      <div style="display:grid;grid-template-rows:2fr 1fr 36px 1.4fr;gap:3px"><span style="background:#1d4ea0"></span><span style="background:#fff"></span><span style="background:#f5c518"></span><span style="background:#d8281c"></span></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 Проблема" style="padding:0 48px 88px">
+  <div style="display:flex;flex-wrap:wrap;gap:32px 64px;padding-top:28px;border-top:2px solid #000">
+    <div style="flex:5 1 360px;min-width:0">
+      <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>02</span><span>Проблема</span></div>
+      <h2 style="margin:20px 0 0;font:700 52px/1 'Golos Text',sans-serif;letter-spacing:-0.03em;text-wrap:pretty">Знакомых всё больше, а&nbsp;помнить о&nbsp;них всё труднее</h2>
+    </div>
+    <div style="flex:7 1 480px;min-width:0;display:flex;flex-direction:column;margin-top:52px">
+      <div style="display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1px solid #000"><span style="width:16px;height:16px;background:#1d4ea0;margin-top:6px"></span><span style="font:400 19px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Контакты разбросаны по телефону, мессенджерам и почте. Чтобы найти человека, сначала вспоминаете, где переписывались.</span></div>
+      <div style="display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1px solid #000"><span style="width:16px;height:16px;background:#f5c518;margin-top:6px"></span><span style="font:400 19px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Через полгода в телефоне «Андрей Конференция», и ни слова о том, кто он и о чём говорили.</span></div>
+      <div style="display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1px solid #000;border-bottom:1px solid #000"><span style="width:16px;height:16px;background:#d8281c;margin-top:6px"></span><span style="font:400 19px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Договорённости забываются. Вспоминаете о них, когда напоминать о себе уже неловко.</span></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 Как это работает" style="padding:0 48px 88px">
+  <div style="padding-top:28px;border-top:2px solid #000">
+    <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>03</span><span>Как это работает</span></div>
+    <h2 style="margin:20px 0 40px;max-width:720px;font:700 52px/1 'Golos Text',sans-serif;letter-spacing:-0.03em;text-wrap:pretty">Три шага. Без настройки и&nbsp;обучения</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:3px;background:#000;border:3px solid #000">
+      <div style="display:grid;grid-template-rows:96px 1fr;gap:3px"><div style="background:#f5c518;display:flex;align-items:flex-end;padding:0 24px 16px;font:700 44px/1 'Golos Text',sans-serif">1</div><div style="background:#fff;padding:24px"><div style="font:600 22px/1.2 'Golos Text',sans-serif">Добавьте человека</div><div style="margin-top:10px;font:400 17px/1.5 'Golos Text',sans-serif">Имя, телефон, почта, откуда знакомы.</div></div></div>
+      <div style="display:grid;grid-template-rows:96px 1fr;gap:3px"><div style="background:#d8281c;color:#fff;display:flex;align-items:flex-end;padding:0 24px 16px;font:700 44px/1 'Golos Text',sans-serif">2</div><div style="background:#fff;padding:24px"><div style="font:600 22px/1.2 'Golos Text',sans-serif">Запишите разговор</div><div style="margin-top:10px;font:400 17px/1.5 'Golos Text',sans-serif;text-wrap:pretty">После встречи или звонка добавьте пару строк в карточку: о чём говорили, что обещали.</div></div></div>
+      <div style="display:grid;grid-template-rows:96px 1fr;gap:3px"><div style="background:#1d4ea0;color:#fff;display:flex;align-items:flex-end;padding:0 24px 16px;font:700 44px/1 'Golos Text',sans-serif">3</div><div style="background:#fff;padding:24px"><div style="font:600 22px/1.2 'Golos Text',sans-serif">Найдите за секунду</div><div style="margin-top:10px;font:400 17px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Введите имя, и перед вами вся история общения.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="04 Возможности" style="padding:0 48px 88px">
+  <div style="padding-top:28px;border-top:2px solid #000">
+    <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>04</span><span>Возможности</span></div>
+    <h2 style="margin:20px 0 40px;max-width:720px;font:700 52px/1 'Golos Text',sans-serif;letter-spacing:-0.03em;text-wrap:pretty">Всё, что нужно, и&nbsp;ничего лишнего</h2>
+    <div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:3px;background:#000;border:3px solid #000">
+      <div style="background:#1d4ea0;color:#fff;padding:28px 24px;grid-row:span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:260px"><div style="font:600 30px/1.1 'Golos Text',sans-serif;letter-spacing:-0.02em">Один список</div><div style="margin-top:12px;font:400 18px/1.45 'Golos Text',sans-serif">Все, кого вы знаете лично, собраны в одном месте.</div></div>
+      <div style="background:#fff;padding:28px 24px"><div style="font:600 20px/1.2 'Golos Text',sans-serif">Карточка человека</div><div style="margin-top:10px;font:400 16px/1.45 'Golos Text',sans-serif">Кто это, откуда знакомы, телефон и почта.</div></div>
+      <div style="background:#fff;padding:28px 24px"><div style="font:600 20px/1.2 'Golos Text',sans-serif">Заметки о&nbsp;разговорах</div><div style="margin-top:10px;font:400 16px/1.45 'Golos Text',sans-serif">Вся история общения хранится внутри карточки.</div></div>
+      <div style="background:#fff;padding:28px 24px"><div style="font:600 20px/1.2 'Golos Text',sans-serif">Мгновенный поиск</div><div style="margin-top:10px;font:400 16px/1.45 'Golos Text',sans-serif">Нужного человека находите по имени.</div></div>
+      <div style="background:#f5c518;padding:28px 24px"><div style="font:600 20px/1.2 'Golos Text',sans-serif">Телефон и&nbsp;компьютер</div><div style="margin-top:10px;font:400 16px/1.45 'Golos Text',sans-serif">На обоих устройствах одни и те же данные.</div></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="05 Результат" style="padding:0 48px 88px">
+  <div style="display:flex;flex-wrap:wrap;gap:32px 64px;padding-top:28px;border-top:2px solid #000">
+    <div style="flex:5 1 360px;min-width:0">
+      <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>05</span><span>Результат</span></div>
+      <h2 style="margin:20px 0 0;font:700 52px/1 'Golos Text',sans-serif;letter-spacing:-0.03em">Что изменится</h2>
+    </div>
+    <div style="flex:7 1 480px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px;background:#000;border:3px solid #000;margin-top:52px">
+      <div style="display:flex;flex-direction:column;gap:20px;background:#fff;padding:24px"><span style="font:600 22px/1 'Golos Text',sans-serif">→</span><span style="font:400 18px/1.45 'Golos Text',sans-serif;text-wrap:pretty">Вы помните контекст каждого знакомства, даже спустя годы.</span></div>
+      <div style="display:flex;flex-direction:column;gap:20px;background:#fff;padding:24px"><span style="font:600 22px/1 'Golos Text',sans-serif">→</span><span style="font:400 18px/1.45 'Golos Text',sans-serif;text-wrap:pretty">Возвращаетесь к договорённостям вовремя, а не тогда, когда уже поздно.</span></div>
+      <div style="display:flex;flex-direction:column;gap:20px;background:#fff;padding:24px"><span style="font:600 22px/1 'Golos Text',sans-serif">→</span><span style="font:400 18px/1.45 'Golos Text',sans-serif;text-wrap:pretty">Приходите на встречу, зная, о чём говорили в прошлый раз.</span></div>
+      <div style="display:flex;flex-direction:column;gap:20px;background:#d8281c;color:#fff;padding:24px"><span style="font:600 22px/1 'Golos Text',sans-serif">→</span><span style="font:500 18px/1.45 'Golos Text',sans-serif;text-wrap:pretty">Люди замечают, что вы их помните, и это укрепляет отношения.</span></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 Для кого" style="padding:0 48px 88px">
+  <div style="padding-top:28px;border-top:2px solid #000">
+    <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>06</span><span>Аудитория</span></div>
+    <h2 style="margin:20px 0 40px;font:700 52px/1 'Golos Text',sans-serif;letter-spacing:-0.03em">Для кого</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 40px">
+      <div style="display:grid;grid-template-columns:40px 1fr;padding:24px 0;border-top:1px solid #000"><span style="width:16px;height:16px;background:#1d4ea0;margin-top:5px"></span><span><span style="display:block;font:600 20px/1.3 'Golos Text',sans-serif">Предприниматели и те, кто много нетворкит</span><span style="display:block;margin-top:8px;font:400 17px/1.5 'Golos Text',sans-serif">Десятки новых знакомств в месяц, и каждое может пригодиться.</span></span></div>
+      <div style="display:grid;grid-template-columns:40px 1fr;padding:24px 0;border-top:1px solid #000"><span style="width:16px;height:16px;background:#f5c518;margin-top:5px"></span><span><span style="display:block;font:600 20px/1.3 'Golos Text',sans-serif">Фрилансеры и консультанты</span><span style="display:block;margin-top:8px;font:400 17px/1.5 'Golos Text',sans-serif">Клиенты, заказчики и рекомендатели в одном месте.</span></span></div>
+      <div style="display:grid;grid-template-columns:40px 1fr;padding:24px 0;border-top:1px solid #000"><span style="width:16px;height:16px;background:#d8281c;margin-top:5px"></span><span><span style="display:block;font:600 20px/1.3 'Golos Text',sans-serif">Те, кто ищет работу или меняет сферу</span><span style="display:block;margin-top:8px;font:400 17px/1.5 'Golos Text',sans-serif">Помните, кто обещал познакомить и с кем.</span></span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:40px 1fr;padding:28px 0;border-top:1px solid #000;border-bottom:1px solid #000"><span style="width:16px;height:16px;background:#000;margin-top:14px"></span><span style="font:700 36px/1.1 'Golos Text',sans-serif;letter-spacing:-0.025em;text-wrap:pretty">Все, у кого людей больше, чем помещается в&nbsp;голове.</span></div>
+  </div>
+</section>
+
+<section data-screen-label="07 Финал" style="padding:0 48px 36px;display:flex;flex-direction:column;box-sizing:border-box;min-height:{{ finalMinH }}">
+  <sc-if value="{{ shapeGrid }}" hint-placeholder-val="{{ false }}"><div style="display:grid;grid-template-columns:3fr 1fr 1.4fr 96px;grid-template-rows:96px 40px;gap:3px;background:#000;border:3px solid #000">
+    <span style="grid-row:1 / 3;background:#fff"></span><span style="background:#1d4ea0"></span><span style="grid-row:1 / 3;background:#fff"></span><span style="grid-row:1 / 3;background:#d8281c"></span><span style="background:#f5c518"></span>
+  </div></sc-if>
+  <sc-if value="{{ shapeStripe }}" hint-placeholder-val="{{ true }}"><div style="display:grid;grid-template-columns:3fr 1fr 2fr;height:14px;border-top:2px solid #000;border-bottom:2px solid #000"><span style="background:#d8281c"></span><span style="background:#f5c518"></span><span style="background:#1d4ea0"></span></div></sc-if>
+  <sc-if value="{{ shapeSquares }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:10px;padding-top:28px;border-top:2px solid #000"><span style="width:20px;height:20px;background:#d8281c"></span><span style="width:20px;height:20px;background:#f5c518"></span><span style="width:20px;height:20px;background:#1d4ea0"></span></div></sc-if>
+  <div style="display:flex;flex-wrap:wrap;gap:40px 64px;align-items:flex-end;margin-top:48px">
+    <div style="flex:7 1 480px;min-width:0">
+      <div style="display:grid;grid-template-columns:64px 1fr;font:500 12px/1.3 'Golos Text',sans-serif;letter-spacing:.14em;text-transform:uppercase"><span>07</span><span>Начните сегодня</span></div>
+      <h2 style="margin:20px 0 0;font:700 68px/0.98 'Golos Text',sans-serif;letter-spacing:-0.035em;text-wrap:pretty">Приходите на встречу так, будто виделись вчера.</h2>
+    </div>
+    <div style="flex:5 1 360px;min-width:0">
+      <p style="margin:0 0 32px;font:400 19px/1.5 'Golos Text',sans-serif;text-wrap:pretty">Вспомните последний важный разговор и запишите его. Через полгода вы скажете себе спасибо.</p>
+      <a href="#" style="display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 24px;background:#f5c518;border:3px solid #000;color:#000;font:600 16px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.08em" style-hover="background:#000;color:#f5c518;opacity:1"><span>Создать первую карточку</span><span style="font-size:22px">→</span></a>
+      <div style="margin-top:14px;display:flex;justify-content:space-between;font:500 12px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.1em"><span>Бесплатно, без карты</span><span>Телефон + ПК</span></div>
+    </div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:36px">
+    <sc-if value="{{ vCards }}" hint-placeholder-val="{{ true }}"><div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:3px;background:#000;border:3px solid #000">
+        <div style="background:#fff;padding:18px"><div style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.16em;text-transform:uppercase">Карточка · 03.2026</div><div style="font:500 22px/1.05 'Golos Text',sans-serif;letter-spacing:-0.02em;margin-top:14px">Андрей Соколов</div><div style="font-size:12px;margin-top:10px;text-transform:uppercase;letter-spacing:.06em">Product Camp · дизайн‑директор</div><div style="border-top:1px solid #000;margin-top:16px;padding-top:14px;font-size:15px;line-height:1.45">Обещал познакомить с командой из Казани. Напомнить в апреле.</div></div>
+        <div style="display:grid;grid-template-rows:2fr 1fr 28px 1.4fr;gap:3px"><span style="background:#1d4ea0"></span><span style="background:#fff"></span><span style="background:#f5c518"></span><span style="background:#d8281c"></span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:3px;background:#000;border:3px solid #000">
+        <div style="background:#fff;padding:18px"><div style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.16em;text-transform:uppercase">Карточка · 11.2025</div><div style="font:500 22px/1.05 'Golos Text',sans-serif;letter-spacing:-0.02em;margin-top:14px">Саша Грей</div><div style="font-size:12px;margin-top:10px;text-transform:uppercase;letter-spacing:.06em">Бывшая коллега · продакт</div><div style="border-top:1px solid #000;margin-top:16px;padding-top:14px;font-size:15px;line-height:1.45">Обсуждали переход в продукт. Прислать вакансию до пятницы.</div></div>
+        <div style="display:grid;grid-template-rows:1fr 2fr 1fr;gap:3px"><span style="background:#f5c518"></span><span style="background:#fff"></span><span style="background:#1d4ea0"></span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:3px;background:#000;border:3px solid #000">
+        <div style="background:#fff;padding:18px"><div style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.16em;text-transform:uppercase">Карточка · 05.2026</div><div style="font:500 22px/1.05 'Golos Text',sans-serif;letter-spacing:-0.02em;margin-top:14px">Игорь Петров</div><div style="font-size:12px;margin-top:10px;text-transform:uppercase;letter-spacing:.06em">Клиент · по рекомендации Анны</div><div style="border-top:1px solid #000;margin-top:16px;padding-top:14px;font-size:15px;line-height:1.45">Нужен сайт для студии. Созвониться 14 мая, обсудить бюджет.</div></div>
+        <div style="display:grid;grid-template-rows:28px 1.6fr 1fr;gap:3px"><span style="background:#d8281c"></span><span style="background:#fff"></span><span style="background:#f5c518"></span></div>
+      </div>
+    </div></sc-if>
+    <sc-if value="{{ vSearch }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:3px;background:#000;border:3px solid #000">
+      <div style="display:grid;grid-template-columns:72px 1fr;gap:3px"><span style="background:#000;color:#fff;display:flex;align-items:center;justify-content:center;font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.14em">ПОИСК</span><div style="background:#fff;display:flex;align-items:center;gap:4px;height:64px;padding:0 22px;font:500 24px/1 'Golos Text',sans-serif"><span>Андр</span><span style="width:2px;height:28px;background:#1d4ea0"></span><span style="margin-left:auto;font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase">3 человека</span></div></div>
+      <div style="display:grid;grid-template-columns:72px 1fr;gap:3px"><span style="background:#1d4ea0;color:#fff;display:flex;align-items:center;justify-content:center;font:600 18px/1 'Golos Text',sans-serif">АС</span><div style="background:#fff;padding:18px 22px"><div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline"><span style="font:600 19px/1.2 'Golos Text',sans-serif">Андрей Соколов</span><span style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap">Product Camp</span></div><div style="margin-top:10px;font:400 16px/1.45 'Golos Text',sans-serif">Обещал познакомить с командой из Казани. Напомнить в апреле.</div></div></div>
+      <div style="display:grid;grid-template-columns:72px 1fr;gap:3px"><span style="background:#f5c518;color:#000;display:flex;align-items:center;justify-content:center;font:600 18px/1 'Golos Text',sans-serif">АК</span><div style="background:#fff;padding:18px 22px"><div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline"><span style="font:600 19px/1.2 'Golos Text',sans-serif">Андрей Ким</span><span style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap">Бывший коллега</span></div></div></div>
+      <div style="display:grid;grid-template-columns:72px 1fr;gap:3px"><span style="background:#d8281c;color:#fff;display:flex;align-items:center;justify-content:center;font:600 18px/1 'Golos Text',sans-serif">АМ</span><div style="background:#fff;padding:18px 22px"><div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline"><span style="font:600 19px/1.2 'Golos Text',sans-serif">Александра Андреева</span><span style="font:500 11px/1 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap">Соседка по коворкингу</span></div></div></div>
+    </div></sc-if>
+    <sc-if value="{{ vHistory }}" hint-placeholder-val="{{ false }}"><div style="display:grid;grid-template-columns:minmax(0,1fr) 96px;gap:3px;background:#000;border:3px solid #000">
+      <div style="background:#fff;padding:24px 28px 12px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap"><span style="font:500 32px/1 'Golos Text',sans-serif;letter-spacing:-0.02em">Андрей Соколов</span><span style="font:500 12px/1 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase">Product Camp · дизайн‑директор</span></div>
+        <div style="margin-top:20px"><div style="display:grid;grid-template-columns:110px 14px 1fr;gap:16px;align-items:start;padding:16px 0;border-top:1px solid #000"><span style="font:500 12px/1.5 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase">12.03.2026</span><span style="width:14px;height:14px;background:#1d4ea0;margin-top:3px"></span><span style="font:400 17px/1.45 'Golos Text',sans-serif">Познакомились на Product Camp. Говорили про найм дизайнеров.</span></div><div style="display:grid;grid-template-columns:110px 14px 1fr;gap:16px;align-items:start;padding:16px 0;border-top:1px solid #000"><span style="font:500 12px/1.5 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase">28.03.2026</span><span style="width:14px;height:14px;background:#f5c518;margin-top:3px"></span><span style="font:400 17px/1.45 'Golos Text',sans-serif">Обещал познакомить с командой из Казани.</span></div><div style="display:grid;grid-template-columns:110px 14px 1fr;gap:16px;align-items:start;padding:16px 0;border-top:1px solid #000"><span style="font:500 12px/1.5 'Golos Text',sans-serif;letter-spacing:.12em;text-transform:uppercase">15.04.2026</span><span style="width:14px;height:14px;background:#d8281c;margin-top:3px"></span><span style="font:400 17px/1.45 'Golos Text',sans-serif">Напомнить про Казань. Предложить встречу в мае.</span></div></div>
+      </div>
+      <div style="display:grid;grid-template-rows:1fr 2fr 40px 1fr;gap:3px"><span style="background:#d8281c"></span><span style="background:#fff"></span><span style="background:#f5c518"></span><span style="background:#1d4ea0"></span></div>
+    </div></sc-if>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:56px;padding-top:20px;border-top:2px solid #000;font:500 12px/1 'Golos Text',sans-serif;text-transform:uppercase;letter-spacing:.1em"><span style="display:flex;align-items:center;gap:10px"><span style="width:12px;height:12px;background:#d8281c"></span>Личная CRM</span><span>© 2026</span></div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;finalVisual&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Три карточки&quot;,&quot;Поиск&quot;,&quot;История общения&quot;],&quot;default&quot;:&quot;Три карточки&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Финальный блок&quot;},&quot;finalShape&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Полоса&quot;,&quot;Три квадрата&quot;,&quot;Решётка&quot;],&quot;default&quot;:&quot;Полоса&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Финальный блок&quot;}}">
+class Component extends DCLogic {
+  state = { heroH: 0 };
+  heroRef = React.createRef();
+  measure = () => { const el = this.heroRef.current; if (el && el.offsetHeight !== this.state.heroH) this.setState({ heroH: el.offsetHeight }); };
+  componentDidMount() { this.measure(); window.addEventListener('resize', this.measure); this.ro = new ResizeObserver(this.measure); if (this.heroRef.current) this.ro.observe(this.heroRef.current); }
+  componentWillUnmount() { window.removeEventListener('resize', this.measure); this.ro && this.ro.disconnect(); }
+  renderVals() {
+    const s = this.props.finalShape ?? 'Полоса';
+    const v = this.props.finalVisual ?? 'Три карточки';
+    return {
+      heroRef: this.heroRef,
+      finalMinH: this.state.heroH ? this.state.heroH + 'px' : 'auto',
+      shapeGrid: s === 'Решётка', shapeStripe: s === 'Полоса', shapeSquares: s === 'Три квадрата',
+      vCards: v === 'Три карточки', vSearch: v === 'Поиск', vHistory: v === 'История общения'
+    };
+  }
+}
+</script>
+</body>
+</html>

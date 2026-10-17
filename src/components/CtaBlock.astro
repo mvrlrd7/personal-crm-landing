@@ -1,0 +1,22 @@
+---
+import { APP_URL } from "../config";
+
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<div class={className}>
+  <a
+    href={APP_URL}
+    class="flex h-16.5 items-center justify-between border-3 border-ink bg-yellow px-5 text-15 leading-none font-semibold tracking-button text-ink uppercase transition-colors duration-150 hover:bg-ink hover:text-yellow focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-blue lg:h-17.5 lg:px-6 lg:text-16"
+  >
+    <span>Создать первую карточку</span><span class="text-20 lg:text-22" aria-hidden="true">→</span>
+  </a>
+  <p
+    class="mt-3 flex justify-between text-11 leading-none font-medium tracking-micro uppercase lg:mt-3.5 lg:text-12"
+  >
+    <span>Бесплатно, без карты</span><span>Телефон + ПК</span>
+  </p>
+</div>

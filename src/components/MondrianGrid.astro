@@ -1,0 +1,12 @@
+---
+// Black background + 3px gap: cells with their own background leave 3px black seams.
+interface Props {
+  as?: "div" | "ul" | "ol";
+  class?: string;
+}
+const { as: Tag = "div", class: className } = Astro.props;
+---
+
+<Tag class:list={["gap-0.75 border-3 border-ink bg-ink", className]}>
+  <slot />
+</Tag>

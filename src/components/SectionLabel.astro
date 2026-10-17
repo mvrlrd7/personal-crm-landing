@@ -1,0 +1,17 @@
+---
+interface Props {
+  number: string;
+  text: string;
+  class?: string;
+}
+const { number, text, class: className } = Astro.props;
+---
+
+<p
+  class:list={[
+    "grid grid-cols-[--spacing(12)_1fr] items-center text-11 leading-snug font-medium tracking-label uppercase lg:grid-cols-[--spacing(16)_1fr] lg:text-12",
+    className,
+  ]}
+>
+  <span>{number}</span><span>{text}</span>
+</p>

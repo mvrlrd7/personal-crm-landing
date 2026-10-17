@@ -1,0 +1,9 @@
+---
+// Decorative colored square. Size and color come from the caller via class.
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<span class:list={["block shrink-0", className]} aria-hidden="true"></span>
