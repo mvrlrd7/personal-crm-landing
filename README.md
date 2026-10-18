@@ -17,3 +17,17 @@
 - `src/config.ts` — адрес приложения `APP_URL`
 - `public/fonts/` — шрифт Golos Text
 - `design/` — макет
+
+## Выкатка
+
+Каждый push в `main` сам выкатывает сайт на https://remembr.cc — сценарий в `.github/workflows/deploy.yml`:
+
+1. GitHub Actions собирает сайт (`pnpm build`) в папку `dist/`
+2. `rsync --delete` копирует `dist/` на сервер в `/var/www/remembr.cc`, nginx отдаёт эту папку
+3. Проверка: главная отвечает 200 и совпадает с только что собранной
+
+Ход выкатки — во вкладке Actions репозитория. Красный крестик — выкатка не прошла: правим и пушим снова.
+
+На сервере выкатку делает отдельный пользователь `landing-deploy`. Его ключ может только загружать файлы в `/var/www/remembr.cc`: зайти на сервер или прочитать файлы им нельзя.
+
+Секреты репозитория (Settings → Secrets → Actions): `DEPLOY_SSH_KEY` — ключ деплоя, `DEPLOY_KNOWN_HOSTS` — отпечатки сервера, `DEPLOY_HOST` — адрес сервера, `DEPLOY_USER` — пользователь.
